@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: Wingdings, sans-serif;
 }
 
 @media (max-width: 767px){
@@ -45,6 +44,7 @@
 #headtop {
     text-align: center;
     font-size: 175%;
+    font-family: Wingdings, sans-serif;
 }
 
 .sect {
@@ -54,12 +54,14 @@
     background: yellow;
     height: 200px;
     min-height: 200px;
-    overflow: auto;
+    overflow: hidden;
     border: 1px black solid;
+    font-family: Wingdings, sans-serif;
 }
 
 .sect:hover {
     resize: vertical;
+    overflow: auto;
 }
 
 div.row {
@@ -76,6 +78,7 @@ div.row {
     margin: 0px;
     z-index: 1;
     font-size: 125%;
+    font-family: Wingdings, sans-serif;
 }
 
 #head1 {
