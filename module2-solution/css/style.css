@@ -10,8 +10,15 @@
     margin: 0px;
     z-index: 1;
     font-size: 125%;
-    font-family: Wingdings, sans-serif;
     display: none;
+    text-align: center;
+    padding: 5px;
+}
+.content {
+    position: relative;
+    min-height: 200px;
+    padding: 40px 10px 10px 10px;
+    margin: 0px;
 }
 
 @media (max-width: 767px){
@@ -22,6 +29,12 @@
         font-size: 75%;
         text-align: left;
         margin-left: 5px;
+    }
+    .head2 {
+        display: block;
+    }
+    .content {
+        padding: 10px;
     }
     #menu {
         display: none;
@@ -66,27 +79,21 @@
     }
 }
 
+.box {
+    position: relative;
+    background: yellow;
+    border: 1px black solid;
+    font-family: Wingdings, sans-serif;
+    height: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 5px;
+}
+
 .headtop {
     text-align: center;
     font-size: 175%;
     font-family: Wingdings, sans-serif;
-}
-
-.content {
-    position: relative;
-    padding: 35px 10px 10px 10px;
-    margin: 5px;
-    background: yellow;
-    height: 200px;
-    min-height: 200px;
-    overflow: hidden;
-    border: 1px black solid;
-    font-family: Wingdings, sans-serif;
-}
-
-.content:hover {
-    resize: vertical;
-    overflow: auto;
 }
 
 div.row {
@@ -95,15 +102,20 @@ div.row {
     padding: 0px 0px 0px 0px;
 }
 
+.box:hover {
+    resize: vertical;
+    overflow: auto;
+}
+
 .head {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 0px;
+    top: 0px;
+    padding: 5px 20px 5px 20px;
     border: 1px solid black;
     margin: 0px;
     z-index: 1;
     font-size: 125%;
-    font-family: Wingdings, sans-serif;
 }
 
 .head1color {
