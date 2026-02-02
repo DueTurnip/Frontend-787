@@ -1,0 +1,59 @@
+/*** Body ***/
+body {
+    background-color: rgb(197, 214, 177);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*** Header ***/
+#header-nav {
+    border-radius: 0;
+    border: 0;
+    background-color: darkgreen;
+}
+
+.navbar-default .navbar-brand { /* Food llc */
+    padding-top: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px #222;
+    line-height: 0;
+    height: auto;
+    font-size: 175%;
+    color: rgb(217, 217, 139);
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+    color: rgb(217, 217, 139);
+    text-decoration: none;
+}
+
+#collapsable-nav a {
+    color: rgb(217, 217, 139);
+}
+
+.box-content {
+    background-color: darkgreen;
+    color: rgb(217, 217, 139);
+    padding: 1px 30px 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box-content h3 {
+    color: rgb(161, 236, 87);
+    font-weight: bold;
+    font-size: 150%;
+    text-shadow: 1px 1px 1px #222;
+} 
+
+.box-content a {
+    color:rgb(178, 234, 200);
+    font-style: italic;
+}
+
+#top-menu {
+    color: darkgreen;
+    text-shadow: 1px 1px 1px #222;
+}
