@@ -74,4 +74,25 @@ WARNING!!! WARNING!!!
     }
   };
   console.log(names.map(speakName));
+
+  // Reduice
+  var groupedGreetings = names.reduce(function (acc, name) {
+    var firstLetter = name.charAt(0).toLowerCase();
+
+    if (firstLetter === 'j') {
+      acc.bye.push(byeSpeaker.speakSimple(name));
+    } else {
+      acc.hello.push(helloSpeaker.speakSimple(name));
+    }
+
+    return acc;
+  }, { hello: [], bye: [] });
+
+  groupedGreetings.hello.forEach(function (greeting) {
+    console.log(greeting);
+  });
+  groupedGreetings.bye.forEach(function (greeting) {
+    console.log(greeting);
+  });
+
 }) ();
