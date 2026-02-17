@@ -131,6 +131,33 @@ function buildAndShowHomeHTML (categories) {
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
 
+function buildAndShowAboutHTML (aboutHtml) {
+  // Random number between 1-5
+  var rating = Math.floor(Math.random() * 5) + 1;
+
+  // Loop through class values and replace
+  for (var i = 1; i <= 5; i++) {
+    if (i <= rating) {
+      aboutHtml = insertProperty(aboutHtml, "class" + i, "fa fa-star");
+    } else {
+      aboutHtml = insertProperty(aboutHtml, "class" + i, "fa fa-star-o");
+    }
+  }
+  aboutHtml = insertProperty(aboutHtml, "number", "" + rating);
+
+  // Insert the HTML snippet into main
+  insertHtml("#main-content", aboutHtml);
+}
+
+// Load about menu view
+var aboutHtmlUrl = "/snippets/about-snippet.html";
+dc.loadAbout = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    aboutHtmlUrl,
+    buildAndShowAboutHTML,
+    false);
+};
 
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
