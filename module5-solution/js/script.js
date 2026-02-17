@@ -13,6 +13,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
+var aboutHtmlUrl = "snippets/about-snippet.html";
 var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
@@ -150,7 +151,6 @@ function buildAndShowAboutHTML (aboutHtml) {
 }
 
 // Load about menu view
-var aboutHtmlUrl = "snippets/about-snippet.html";
 dc.loadAbout = function () {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
