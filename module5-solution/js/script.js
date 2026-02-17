@@ -150,7 +150,7 @@ function buildAndShowAboutHTML (aboutHtml) {
 }
 
 // Load about menu view
-var aboutHtmlUrl = "/snippets/about-snippet.html";
+var aboutHtmlUrl = "snippets/about-snippet.html";
 dc.loadAbout = function () {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
