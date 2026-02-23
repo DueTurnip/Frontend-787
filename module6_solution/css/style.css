@@ -8,10 +8,18 @@ button {
 
 /* Hover state */
 button:hover {
-    background-color: #ffcc00; /* button background */
+    background-color: #ffcc00;
 }
 
 button:hover #buttonText {
-    color: #000; /* text color */
+    color: #000;
     font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.succ {
+    color: green;
 }

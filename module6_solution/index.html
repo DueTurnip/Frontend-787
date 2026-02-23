@@ -11,10 +11,10 @@
     <body>
         <div ng-controller="LunchController">
             <input type="text" ng-model="list"></input>
-            <button value="">
+            <button value="" ng-click="LunchMessage();">
                 <div id="buttonText">Invoke the Bees?</div>
             </button><br><br>
-            <div id="message">{{list}}</div>
+            <div id="message" class="{{color}}">{{message}}</div>
         </div>
     </body>
 </html>
