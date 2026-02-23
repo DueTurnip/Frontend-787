@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+button {
+    border-radius: 3.5px;
+}
+
+/* Hover state */
+button:hover {
+    background-color: #ffcc00; /* button background */
+}
+
+button:hover #buttonText {
+    color: #000; /* text color */
+    font-weight: bold;
+}

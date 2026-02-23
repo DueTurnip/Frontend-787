@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+    <head>
+        <meta charset="utf-8">
+        <meta language="en">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <title>Where Bees? 2: Return of the Bees</title>
+    </head>
+    <body>
+        <div ng-controller="LunchController">
+            <input type="text" ng-model="list"></input>
+            <button value="">
+                <div id="buttonText">Invoke the Bees?</div>
+            </button><br><br>
+            <div id="message">{{list}}</div>
+        </div>
+    </body>
+</html>
