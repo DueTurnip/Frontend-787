@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="CheckList" lang="en">
+<html ng-app="ShoppingListCheckOff" lang="en">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
@@ -20,7 +20,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="bought" ng-controller="BoughtController as list">
+            <div id="bought" ng-controller="AlreadyBoughtController as list">
                 <h3>Already Bought</h3>
                 <ul>
                     <li ng-if="list.bought.length === 0">Nothing Bought Yet</li>
