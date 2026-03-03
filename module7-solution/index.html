@@ -15,8 +15,10 @@
                 <ul>
                     <li ng-if="list.toBuy.length === 0">Everything is Bought!</li>
                     <li ng-repeat="item in list.toBuy">
-                        {{item.quantity}} {{item.name}}&nbsp;&nbsp;
+                        {{item.name}} at {{item.pricePerItem | customCurrency}} each
+                        <input type="text" ng-model="item.quantity"/>
                         <button ng-click="list.buyItem(item);">Buy</button>
+                        
                     </li>
                 </ul>
             </div>
@@ -25,7 +27,7 @@
                 <ul>
                     <li ng-if="list.bought.length === 0">Nothing Bought Yet</li>
                     <li ng-repeat="item in list.bought">
-                        {{item.quantity}} {{item.name}}
+                        Bought {{item.quantity}} {{item.name}} for a total price of {{item.quantity * item.pricePerItem | customCurrency}}
                     </li>
                 </ul>
             </div>
