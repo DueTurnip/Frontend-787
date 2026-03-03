@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+#to-buy {
+    text-align: right;
+}
+
+#bought {
+    text-align: left;
+}
+
+.wrapper {
+    width: 35%;
+    margin: 0 auto;
+}
+
+#to-buy, #bought {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
