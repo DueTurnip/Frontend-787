@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Angular js -->
+        <script src="angular/angular.min.js"></script>
+        <script src="angular/angular-ui-router.min.js"></script>
+        <!-- Modules -->
+        <script src="modules/menuapp.module.js"></script>
+        <script src="modules/data.module.js"></script>
+        <!-- Rats Nest -->
+        <script src="modules/menudata.service.js"></script>
+        <script src="modules/categories.component.js"></script>
+        <script src="modules/items.component.js"></script>
+        <script src="modules/routes.js"></script>
+        <title>Not the BEES!</title>
+    </head>
+    <body>
+        <h1> Welcome to the Bee List Emporium (minus the bees) </h1>
+
+        <nav>
+            <a ui-sref="home">Home</a>
+            <a ui-sref="categories">Categories</a>
+        </nav>
+
+        <ui-view></ui-view>
+    </body>
+</html>
