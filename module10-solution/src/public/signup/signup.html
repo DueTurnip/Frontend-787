@@ -1,0 +1,51 @@
+<div class="container signup-container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 signup">
+            <h2>Sign Up for Our Newsletter</h2>
+
+            <form name="signupForm" ng-submit="signupCtrl.submit()" novalidate>
+                <!-- First Name -->
+                <input class="form-control" type="text" name="firstName" placeholder="First Name" ng-model="signupCtrl.user.firstName" required>
+                <span ng-if="signupForm.firstName.$error.required && signupForm.firstName.$touched">
+                First name is required.
+                </span>
+                <br>
+                <!-- Last Name -->
+                <input class="form-control" type="text" name="lastName" placeholder="Last Name" ng-model="signupCtrl.user.lastName" required>
+                <span ng-if="signupForm.lastName.$error.required && signupForm.lastName.$touched">
+                    Last name is required.
+                </span>
+                <br>
+                <!-- Email -->
+                <input class="form-control" type="email" name="email" placeholder="Email" ng-model="signupCtrl.user.email" required>
+                <span ng-if="signupForm.email.$error.required && signupForm.email.$touched">
+                    Must be a valid email address.
+                </span>
+                <br>
+                <!-- Phone -->
+                <input class="form-control" type="text" name="phone" placeholder="Phone (###)-###-####" ng-model="signupCtrl.user.phone" pattern="(\d{3})-(\d{3})-(\d{4})" required>
+                <span ng-if="signupForm.phone.$error.required && signupForm.phone.$touched">
+                    Phone must be in the format ###-###-####.
+                </span>
+                <br>
+                <!-- Menu Item -->
+                <input class="form-control" type="text" name="menuItem" placeholder="Favorite Menu Number (i.e. L1)" 
+                    ng-model="signupCtrl.user.menuItem" ng-blur="signupCtrl.checkMenuItem()" required>
+                <span ng-if="signupCtrl.menuError">
+                    No such menu number exists.
+                </span>
+                <br>
+                <!-- Submit -->
+                <button class="btn" type="submit" ng-disabled="signupForm.$invalid">
+                    Submit
+                </button>
+                <br>
+            </form>
+
+            <!-- Success Alert -->
+            <div class="alert alert-success" ng-if="signupCtrl.saved">
+                Your info is saved!
+            </div>
+        </div>
+    </div>
+</div>

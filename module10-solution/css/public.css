@@ -111,6 +111,35 @@ h3.menu-item-title {
   font-size: .9em;
   font-style: italic;
 }
+.ng-touched.ng-valid {
+  border: 2px green solid;
+}
+.ng-touched.ng-invalid {
+  border: 2px red solid;
+}
+.signup-container .btn {
+  color:#3F0C1F;
+}
+.signup-container {
+  text-align: center;
+}
+.signup-container h2 {
+  margin-bottom: 25px;
+}
+.signup-container .alert {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+.info-container {
+  text-align: center;
+}
+.info-table {
+  padding: 30px;
+}
+.info-container .media-body {
+  text-align: left;
+}
 /* END SINGLE CATEGORY PAGE */
 
 
